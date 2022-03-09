@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AppAttic-Client/static/css/main.1ee52a32.css",
+    "main.js": "/AppAttic-Client/static/js/main.c3cf06e8.js",
+    "index.html": "/AppAttic-Client/index.html",
+    "main.1ee52a32.css.map": "/AppAttic-Client/static/css/main.1ee52a32.css.map",
+    "main.c3cf06e8.js.map": "/AppAttic-Client/static/js/main.c3cf06e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ee52a32.css",
+    "static/js/main.c3cf06e8.js"
+  ]
+}
