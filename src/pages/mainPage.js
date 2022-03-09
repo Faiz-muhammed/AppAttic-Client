@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
+import { ExternalLink } from "react-external-link";
 import api from "../apiCalls/mainPageApi.js";
 import {
   AppProvider,
@@ -13,7 +14,7 @@ function MainPage() {
   let placeholderValue = "Enter the quote";
   const [quote, setQuote] = useState(initialValue);
   const [imageSrc, setImageSrc] = useState("No image");
-  const [placeHolder,setPlaceholder] =useState(placeholderValue);
+  const [placeHolder, setPlaceholder] = useState(placeholderValue);
   const [color, setColor] = useState({
     hue: 300,
     brightness: 1,
@@ -32,9 +33,9 @@ function MainPage() {
         let image = data.data.image;
         setImageSrc(image);
       });
-    } else {;
-      setPlaceholder("Enter a quote less than 100 characters")
-      setQuote(initialValue)
+    } else {
+      setPlaceholder("Enter a quote less than 100 characters");
+      setQuote(initialValue);
     }
   };
   useLayoutEffect(() => {
@@ -69,6 +70,11 @@ function MainPage() {
             }}
             src={imageSrc}
           />
+          <h3>
+            GitHub Backend repo:
+            <ExternalLink href="https://github.com/Faiz-muhammed/AppAttic-server.git"></ExternalLink>
+          </h3><br/>
+          <h3>Github repo frontend:<ExternalLink href="https://github.com/Faiz-muhammed/AppAttic-Client.git"></ExternalLink></h3>
         </Card>
       </Page>
     </>
